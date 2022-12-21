@@ -4,13 +4,12 @@ body {
     font-family: 'Open Sans';
 }
 
-ul,
-li {
+ul, li {
     display: block;
     padding: 0;
     margin: 0;
 }
-
+/*Меню*/
 .menu-bar {
     background: #fff;
     padding: 20px 0;
@@ -33,7 +32,7 @@ li {
 }
 
 /*Шапка*/
-.header>div {
+.header {
     color: white;
     text-align: center;
     padding: 180px 0;
@@ -52,27 +51,19 @@ li {
 }
 
 .button {
+    text-transform: uppercase;
+    cursor: pointer;
     padding: 10px 25px;
     margin: 0 10px;
     color: white;
     transition: 0.3s;
-}
-
-.button_empty {
-    background: transparent;
-    border: 2px solid white;
-}
-
-.button_full {
     background: #00897b;
     border: 2px solid #00897b;
 }
 
-.button_empty:hover,
-.button_full:hover {
-    border: 2px dotted white;
-    background: #04574e;
-    cursor: pointer;
+.button:hover {
+    background: transparent;
+    border: 2px solid white;
 }
 /*О нас*/
 .about {
@@ -86,8 +77,7 @@ li {
     font-size: 30px;
     font-weight: bold;
 }
-.about .about__text {
-    color: #212121;
+.about__text {
     font-size: 15px;
     margin-bottom: 110px;
 }
@@ -141,4 +131,49 @@ li {
 }
 .button-services:hover {
     cursor: pointer;
+}
+/*Портфолио*/
+.portfolio {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 135px;
+}
+.portfolio button {
+    color: black;
+    border: 2px solid #00897b;
+    background: transparent;
+}
+.portfolio button:hover {
+    color: white;
+    border: 2px solid #00897b;
+    background: #00897b;
+}
+.portfolio img {
+    margin-bottom: 30px;
+}
+.filter {
+    padding: 120px 0;
+}
+div[filter]:hover img {
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+.text {
+    display: none;
+}
+div[filter]:hover .text {
+    display: block;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: 3;
+    text-align: center;
+}
+.portfolio .col-xl-12 button, 
+.portfolio .active {
+    color: white;
+    border: 2px solid #00897b;
+    background: #00897b;
 }
