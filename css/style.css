@@ -72,6 +72,7 @@ li {
 .button_full:hover {
     border: 2px dotted white;
     background: #04574e;
+    cursor: pointer;
 }
 /*О нас*/
 .about {
@@ -85,7 +86,7 @@ li {
     font-size: 30px;
     font-weight: bold;
 }
-.about__text {
+.about .about__text {
     color: #212121;
     font-size: 15px;
     margin-bottom: 110px;
@@ -95,4 +96,49 @@ li {
     margin-bottom: 20px;
     font-family: 'Open Sans Semibold';
     font-size: 20px;
+}
+/*Наши услуги*/
+.services {
+    padding-top: 165px;
+    padding-bottom: 125px;
+    color: black;
+    background: #e4fdf9;
+    text-align: center;
+}
+.our_card {
+    background: white;
+    padding: 50px 40px 40px;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+.our_card:hover {
+    background: #00897b;
+    color: white;
+    box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
+}
+.our_card:hover .icon {
+    background-image: url(../img/smartphone_white.png);
+}
+.our_card:hover .button-services {
+    border: 2px solid white;
+    color: white;
+}
+.icon {
+    transition: 0.3s;
+    display: inline-block;
+    width: 56px;
+    height: 62px;
+    background-image: url(../img/smartphone_black.png);
+}
+.button-services {
+    transition: 0.3s;
+    color: black;
+    text-transform: uppercase;
+    border: 2px solid black;
+    background: transparent;
+    padding: 10px 12px 10px;
+    font-family: 'Open Sans Semibold';
+}
+.button-services:hover {
+    cursor: pointer;
 }
